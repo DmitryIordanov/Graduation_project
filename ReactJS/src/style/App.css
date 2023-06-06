@@ -168,11 +168,24 @@ h1, h2, h3{
 
 /* Style for page NotFound */
 
-.NotFound{
-    font-weight: 500;
+.NotFound_title{
+    font-size: 120px;
+}
+.NotFound_text{
     font-size: 50px;
-    text-align: center;
-    margin-top: 40px;
+}
+.NotFound{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+}
+.NotFound_text,
+.NotFound_title{
+    font-weight: 500;
+    margin: 0;
 }
 
 /* Login block page Login */
@@ -191,6 +204,7 @@ h1, h2, h3{
     justify-content: center;
     height: 70px;
     width: 100%;
+    margin-top: 30px;
     padding: 0 15px;
     align-items: center;
     background: #dce8f1;
@@ -277,4 +291,22 @@ h1, h2, h3{
 }
 .Trash__block a:hover{
     color: #4b4b4b;
+}
+
+/* Input style */
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: teal;
+    cursor: pointer;
+    transition: .2s;
+    border: 2px solid teal;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: teal;
+    color: #fff;
 }

@@ -71,7 +71,7 @@ const PostOutput = ({OutputFilter}) => {
                 :null
             }
             {postError &&
-                <h1 style={{textAlign: "center"}}>Поизошла ошибка {postError}</h1>
+                <h1 style={{textAlign: "center"}}>Виникла помилка {postError}</h1>
             }
             {isPostsLoading
                 ?<div style={{display: 'flex', justifyContent: 'center', marginTop: '25px'}}>

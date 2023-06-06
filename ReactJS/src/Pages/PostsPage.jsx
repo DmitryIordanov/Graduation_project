@@ -25,7 +25,7 @@ const PostsPage = () => {
     }, [])
 
     return (
-        <div className='container'>
+        <div className='container' style={{ maxWidth: 1000 }}>
             {isLoading
                 ?<div style={{display: 'flex', justifyContent: 'center', marginTop: '25px'}}>
                     <MyLoader></MyLoader>

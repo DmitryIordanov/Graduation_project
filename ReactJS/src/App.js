@@ -23,14 +23,14 @@ function App() {
             setIsAuth
         }}>
             <BrowserRouter>
-                <Navbar/>
                 <AuthCreatePost.Provider value={{
                     isCreatePost,
                     setIsCreatePost
                 }}>
+                    <Navbar/>
                     <AppRouter/>
+                    <Footer/>
                 </AuthCreatePost.Provider>
-                <Footer/>
             </BrowserRouter>
         </AuthContext.Provider>
     )
